@@ -13,4 +13,4 @@ class Config:
     MAIL_DEFAULT_SENDER = 'dangolsujan2018@gmail.com'
     
     # Database URI (Use a raw string literal for Windows path)
-    SQLALCHEMY_DATABASE_URI = r'sqlite:///D:\S\WebDev\web\instances\app.db'
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, '..', 'instances', 'app.db')
